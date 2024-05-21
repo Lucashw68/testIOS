@@ -15,8 +15,8 @@ scripts:
     script: |
       cd ios/App
       xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
-  artifacts:
-    - build/ios/ipa/*.ipa
-    - /tmp/xcodebuild_logs/*.log
-    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+artifacts:
+  - build/ios/ipa/*.ipa
+  - /tmp/xcodebuild_logs/*.log
+  - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+  - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
